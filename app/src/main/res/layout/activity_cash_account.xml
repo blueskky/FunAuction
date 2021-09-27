@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".ui.CashAccountActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_ali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_100"
+        android:layout_marginRight="@dimen/px_50"
+        android:background="@drawable/account_item_shape"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/px_180"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ali_pay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="添加支付宝收款账户"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/cb_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_marginRight="@dimen/px_50"
+        android:background="@drawable/account_item_shape"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/px_180"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wechat_pay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_we_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="添加微信收款账户"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:id="@+id/tv_we_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cb_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_normal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

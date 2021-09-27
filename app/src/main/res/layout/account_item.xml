@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_185"
+    android:layout_marginLeft="@dimen/px_55"
+    android:layout_marginTop="@dimen/px_20"
+    android:layout_marginRight="@dimen/px_55"
+    android:layout_marginBottom="@dimen/px_20"
+    android:background="@drawable/account_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px_40"
+    android:paddingTop="@dimen/px_30"
+    android:paddingRight="@dimen/px_40"
+    android:paddingBottom="@dimen/px_30">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝盒"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="202010313 20:34:23"
+        android:textColor="#999"
+        android:textSize="@dimen/px_30" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="30"
+        android:textColor="#3ff282"
+        android:textSize="@dimen/px_40" />
+
+
+</RelativeLayout>

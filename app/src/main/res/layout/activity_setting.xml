@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".ui.WishActivity">
+
+    <include layout="@layout/common_title" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_adress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:id="@+id/tv_address_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_pay_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_auth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:id="@+id/tv_auth_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_policy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户协议"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私条款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于趣拍拍"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=">"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_160"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/btn_logout"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+</LinearLayout>

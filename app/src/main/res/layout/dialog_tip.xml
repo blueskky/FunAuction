@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_800"
+    android:layout_height="@dimen/px_450"
+    android:background="@drawable/dialog_white_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:text="提示"
+        android:textColor="#333"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/px_50"
+        android:paddingRight="@dimen/px_50"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="请在公众号&quot;趣拍拍Family&quot;留言咨询公众号客服"
+        android:textColor="#333"
+        android:textSize="@dimen/px_36" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#d6d6d6" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#0161EA"
+        android:textSize="@dimen/px_36" />
+
+</LinearLayout>

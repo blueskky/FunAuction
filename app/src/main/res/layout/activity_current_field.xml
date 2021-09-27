@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".ui.CurrentFieldActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:layout_marginTop="@dimen/px_80">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@drawable/iv_back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="本次拍中记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:padding="@dimen/px_20"
+            android:text="跳过"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/px_30"
+        android:text="拍中宝盒24小时未处理将失效"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/tvSell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/btn_resell"
+        android:gravity="center"
+        android:text="全部转卖"
+        android:visibility="gone" />
+
+</LinearLayout>

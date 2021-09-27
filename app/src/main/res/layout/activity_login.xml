@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.EasyLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_avator" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_150"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_40" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_150"
+            android:layout_marginLeft="@dimen/px_115"
+            android:layout_marginTop="@dimen/px_150"
+            android:layout_marginRight="@dimen/px_115"
+            android:background="@drawable/login_btn"
+            android:text="本机号码一键登录"
+            android:textColor="#464892"
+            android:textSize="@dimen/px_40" />
+
+
+        <TextView
+            android:id="@+id/tv_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_88"
+            android:text="手机验证码登录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_40" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

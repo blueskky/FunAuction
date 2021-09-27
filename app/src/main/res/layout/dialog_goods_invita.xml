@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_40"
+        android:text="长按保存至相册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/invitation_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_80"
+        android:paddingRight="@dimen/px_80">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="36" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="64"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px_50"
+                android:text="快点进 手慢无"
+                android:textColor="#4c4c6d"
+                android:textSize="@dimen/px_36" />
+
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="@dimen/px_225"
+                android:layout_height="@dimen/px_225"
+                android:layout_centerInParent="true"
+                android:background="@color/color_ddd" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_50"
+                android:text="扫码识别"
+                android:textColor="#4c4c6d"
+                android:textSize="@dimen/px_30" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tv_copy"
+        android:layout_width="@dimen/px_330"
+        android:layout_height="@dimen/px_100"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@drawable/goods_share_copy"
+        android:text="复制链接"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_35" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:src="@drawable/icon_close" />
+
+
+</LinearLayout>

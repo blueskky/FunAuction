@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableLoadMore="false"
+    tools:context=".ui.MeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/px_40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/px_50">
+
+                <ImageView
+                    android:id="@+id/avator"
+                    android:layout_width="@dimen/px_95"
+                    android:layout_height="@dimen/px_95"
+                    android:src="@drawable/avator_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:text="去登录 >"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_36" />
+
+                    <TextView
+                        android:id="@+id/tvPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_20"
+                        android:text="积分：0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_36" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/px_15"
+                android:src="@drawable/icon_setting" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_405"
+            android:layout_marginTop="@dimen/px_60"
+            android:background="@drawable/me_coin_bg"
+            android:padding="@dimen/px_25">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px_10"
+                    android:text="拍拍币余额（价值：1 枚 =1人民币）"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/tv_bind"
+                    android:layout_width="@dimen/px_560"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_des"
+                    android:background="@drawable/bind_code_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px_40"
+                    android:paddingTop="@dimen/px_18"
+                    android:paddingRight="@dimen/px_40"
+                    android:paddingBottom="@dimen/px_30"
+                    android:text="您未绑定推广码，去绑定 >"
+                    android:textColor="#00BAF9"
+                    android:textSize="@dimen/px_36" />
+
+
+                <TextView
+                    android:id="@+id/tv_account_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/px_10"
+                    android:text="充值记录 >"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:drawableLeft="@drawable/coin_big"
+                    android:drawablePadding="@dimen/px_15"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_72" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <Button
+                    android:id="@+id/btn_charge"
+                    android:layout_width="@dimen/px_210"
+                    android:layout_height="@dimen/px_86"
+                    android:background="@drawable/zhuan_chu_bg"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+
+                <TextView
+                    android:id="@+id/tv_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/px_40"
+                    android:text="转让"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_100" />
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_service"
+            android:layout_width="@dimen/px_300"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_40"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_95"
+                android:layout_height="@dimen/px_95"
+                android:src="@drawable/icon_service" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:gravity="center"
+                android:text="客服咨询\n11:00-18:00"
+                android:textColor="#999999"
+                android:textSize="@dimen/px_30" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_280"
+    android:layout_marginLeft="@dimen/px_38"
+    android:layout_marginRight="@dimen/px_38">
+
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_215"
+        android:layout_centerVertical="true"
+        android:background="#FDC685" />
+
+
+    <RelativeLayout
+        android:id="@+id/fl_cover"
+        android:layout_width="@dimen/px_253"
+        android:layout_height="@dimen/px_253"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_80">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_last_box"
+            android:layout_width="@dimen/px_253"
+            android:layout_height="@dimen/px_253"
+            android:scaleType="centerCrop"
+            android:src="@color/color_ddd"
+            app:riv_border_color="#fed649"
+            app:riv_border_width="@dimen/px_4"
+            app:riv_corner_radius="@dimen/px_15" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_30" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/background"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_30"
+        android:layout_toRightOf="@+id/fl_cover"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#a06821"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignBottom="@+id/background"
+        android:layout_marginBottom="@dimen/px_20"
+        android:textColor="#a06821"
+        android:textSize="@dimen/px_36" />
+
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/background"
+        android:src="@drawable/box_small_cad" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/background"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/box_small_cad2" />
+
+
+</RelativeLayout>

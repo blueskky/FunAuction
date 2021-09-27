@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#282828">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_400"
+                android:background="@drawable/icon_home_header"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|snap">
+
+
+                <TextView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/px_40"
+                    android:gravity="center"
+                    android:padding="@dimen/px_30"
+                    android:text="规则"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_150"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_marginRight="@dimen/px_50"
+            android:background="@drawable/tag_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/px_10"
+                android:layout_weight="1"
+                android:background="@drawable/radio_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="小白场"
+                android:textColor="@drawable/tab_text" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/px_10"
+                android:layout_weight="1"
+                android:background="@drawable/radio_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="进阶场"
+                android:textColor="@drawable/tab_text" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/px_10"
+                android:layout_weight="1"
+                android:background="@drawable/radio_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="大佬场"
+                android:textColor="@drawable/tab_text" />
+
+
+        </RadioGroup>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_300"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_ship" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_80"
+                android:background="@drawable/notice_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_30"
+                android:text="恭喜用户132******112大佬场拍中iphone12 一部"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_35" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

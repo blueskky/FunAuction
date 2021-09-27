@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_740"
+    android:layout_height="@dimen/px_910"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_130"
+        android:src="@drawable/offer_succ" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_100"
+        android:text="出价成功"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_40" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40"
+        android:text="24小时内无更低出价者则抢购成功"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_36" />
+
+
+    <Button
+        android:id="@+id/btn_pat"
+        android:layout_width="@dimen/px_470"
+        android:layout_height="@dimen/px_110"
+        android:layout_marginTop="@dimen/px_120"
+        android:layout_marginBottom="@dimen/px_60"
+        android:background="@drawable/btn_pat"
+        android:gravity="center"
+        android:text="知道了"
+        android:textColor="#4cb569"
+        android:textSize="@dimen/px_40" />
+
+
+</LinearLayout>
+
+
+
+

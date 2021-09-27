@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/px_30">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/px_40"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_15"
+            android:text="数量x1"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_36" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:orientation="vertical"
+        android:padding="@dimen/px_30">
+
+        <TextView
+            android:id="@+id/box_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝盒单号"
+            android:textColor="#a0a0a0"
+            android:textSize="@dimen/px_36" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转卖说明："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请转卖的宝盒，将由平台代售卖，具体售价以最终实际成交价为准。售卖成功后，系统将自动结算并将售卖金额存入用户个人账户余额。"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流说明："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择实物的宝盒，由用户确认收货地址后，系统会自动发出物流单商品可退换，用户需自付快递费用，退货无法退回已消耗拍拍币。"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时效说明："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍中宝盒在24小时内不处理，将失效。失效宝盒无法转卖或实物收货"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

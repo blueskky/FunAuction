@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="@dimen/px_200"
+        android:layout_height="@dimen/px_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginBottom="@dimen/px_30"
+        android:background="@drawable/charge_item"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/coin_small"
+            android:drawablePadding="@dimen/px_10"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:id="@+id/tv_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text=""
+            android:textColor="#D95830"
+            android:textSize="@dimen/px_28" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_30" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

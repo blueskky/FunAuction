@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282828">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_460"
+                    android:background="@drawable/shop_header"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|snap">
+
+
+                    <TextView
+                        android:id="@+id/tv_rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/px_40"
+                        android:gravity="center"
+                        android:padding="@dimen/px_30"
+                        android:text="规则"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_36" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_130"
+                android:paddingRight="@dimen/px_40">
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:arrowTint="@color/white"
+                    app:backgroundSelector="@drawable/spinner_shop"
+                    app:textTint="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/tv_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_toRightOf="@+id/spinner"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/wish_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/xu_yuan"
+                    android:drawablePadding="@dimen/px_20"
+                    android:gravity="center_vertical"
+                    android:text="许愿瓶"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/px_36"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

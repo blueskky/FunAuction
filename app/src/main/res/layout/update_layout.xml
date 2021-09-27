@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_apply_vip_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="@dimen/px_900"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_60">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_50"
+                android:gravity="center"
+                android:text="发现新版本"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_margin="@dimen/px_60"
+                android:lineSpacingMultiplier="1.3"
+                android:text="检测到新版本，是否升级？"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_36" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_60"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/px_20"
+                android:src="@drawable/icon_close" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="@dimen/px_400"
+            android:layout_height="@dimen/px_120"
+            android:layout_weight="1"
+            android:background="@drawable/update_shape"
+            android:gravity="center"
+            android:text="立即升级"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_40" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

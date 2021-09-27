@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD3F01"
+    tools:context=".ui.PartnerActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_apply">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:background="@drawable/my_agency_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1065"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px_40"
+                android:text="请先邀请10名好友，完成认证考核"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_40" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_70"
+        android:padding="@dimen/px_30"
+        android:src="@drawable/iv_back" />
+
+    <TextView
+        android:id="@+id/tv_apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5C01"
+        android:gravity="center"
+        android:text="立即申请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+</RelativeLayout>

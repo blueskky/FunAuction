@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/px_740"
+        android:layout_height="@dimen/px_910"
+        android:background="@drawable/pat_success"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_60"
+            android:text="恭喜你成功抢购心仪商品\n请尽快前往确认收货信息"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_40" />
+
+
+        <Button
+            android:id="@+id/btn_adress"
+            android:layout_width="@dimen/px_470"
+            android:layout_height="@dimen/px_110"
+            android:layout_marginBottom="@dimen/px_60"
+            android:background="@drawable/btn_pat"
+            android:gravity="center"
+            android:text="去完善收货信息"
+            android:textColor="#4cb569"
+            android:textSize="@dimen/px_40" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/px_60"
+        android:layout_height="@dimen/px_60"
+        android:layout_marginTop="@dimen/px_60"
+        android:src="@drawable/icon_close" />
+
+
+</LinearLayout>
+
+
+
+

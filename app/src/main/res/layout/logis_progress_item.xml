@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:minHeight="@dimen/px_200"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/px_50"
+    android:paddingRight="@dimen/px_50">
+
+    <LinearLayout
+        android:layout_width="@dimen/px_230"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_65"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px_100"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="@dimen/px_2"
+            android:layout_height="@dimen/px_80"
+            android:background="@color/white" />
+
+        <View
+            android:id="@+id/tv_dot"
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:background="@drawable/dot" />
+
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginBottom="@dimen/px_60"
+        android:lineSpacingMultiplier="1.3"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".ui.AliAccountActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/px_60"
+        android:src="@drawable/ali_pay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号名称："
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint=""
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="点击获取"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓\u3000\u3000名："
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@null"
+            android:hint=""
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/btn_charge"
+        android:gravity="center"
+        android:padding="@dimen/px_20"
+        android:text="确认提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+
+</LinearLayout>

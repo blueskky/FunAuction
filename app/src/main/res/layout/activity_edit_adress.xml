@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".ui.WishActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人\u3000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@null"
+            android:hint=""
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号\u3000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@null"
+            android:hint=""
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在地区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <EditText
+            android:id="@+id/et_region"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint=""
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="定位 >"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+        <EditText
+            android:id="@+id/et_adress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@null"
+            android:hint=""
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_160"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/btn_want"
+        android:text="添加为新地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+</LinearLayout>

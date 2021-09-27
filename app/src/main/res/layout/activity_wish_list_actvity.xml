@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".ui.WishListActvity">
+
+    <include layout="@layout/common_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/btn_want"
+        android:layout_marginTop="@dimen/px_40"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/btn_wish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/px_50"
+        android:background="@drawable/btn_want"
+        android:text="许个愿"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+</LinearLayout>

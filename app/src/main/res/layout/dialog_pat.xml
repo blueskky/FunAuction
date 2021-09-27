@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_740"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_horizontal"
+    android:minHeight="@dimen/px_910"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_marginRight="@dimen/px_30"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="@dimen/px_40"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_60"
+        android:src="@drawable/icon_pat" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:lineSpacingMultiplier="1.5"
+        android:text="将以当前现价出价拍下该商品\n具体价格将在抢购成功后展示"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_35" />
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/tvConfirm"
+        android:layout_width="@dimen/px_470"
+        android:layout_height="@dimen/px_110"
+        android:layout_marginBottom="@dimen/px_40"
+        android:background="@drawable/btn_pat"
+        android:gravity="center"
+        android:text="确认出价拍下"
+        android:textColor="#4cb569"
+        android:textSize="@dimen/px_40" />
+
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_30"
+        android:padding="@dimen/px_20"
+        android:text="再等等"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_36" />
+
+
+</LinearLayout>

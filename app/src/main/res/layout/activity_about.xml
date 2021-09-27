@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.AboutActivity">
+
+    <include layout="@layout/common_title" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_avator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="趣拍拍"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_60" />
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_100"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:text="当前版本\n1.0.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_check"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本检测更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_30">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系我们"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bytesmartad@163.com"
+                android:textColor="#999"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/px_20"
+            android:text="复制"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_36" />
+
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/px_100"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:padding="@dimen/px_20"
+        android:text="Copyright @ 2019-2021\n毕特灵动版权所有"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+</LinearLayout>

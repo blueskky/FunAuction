@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_250"
+    android:layout_height="@dimen/px_90"
+    android:background="@drawable/right_button"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="规则"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+    <View
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:src="@drawable/menu" />
+
+</LinearLayout>

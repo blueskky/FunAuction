@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_800"
+    android:layout_height="wrap_content"
+    android:background="@drawable/re_sell_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_marginRight="@dimen/px_30"
+        android:textColor="#27c684"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_30"
+        android:textColor="@color/price_color"
+        android:textSize="@dimen/px_36"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_price2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_30"
+        android:textColor="@color/price_color"
+        android:textSize="@dimen/px_36" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_marginRight="@dimen/px_30"
+        android:text="说明：转卖价格一般低于市场价格，以便快速卖出，预估价格区间只做参考"
+        android:textColor="#999"
+        android:textSize="@dimen/px_30" />
+
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_130"
+        android:layout_marginTop="@dimen/px_50"
+        android:background="@drawable/re_sell_shape"
+        android:gravity="center"
+        android:text="确定转卖"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_36" />
+
+</LinearLayout>

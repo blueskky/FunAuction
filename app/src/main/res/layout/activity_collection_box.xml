@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.CollectionBoxActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="@dimen/px_982"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ji_fu"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="63"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_50"
+                android:text="当前正在集福"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:text="拍宝盒免费集福，开中奖品免费领取"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/px_280"
+                android:layout_height="@dimen/px_280"
+                android:src="@color/color_ddd"
+                app:riv_border_color="#fed649"
+                app:riv_border_width="@dimen/px_4"
+                app:riv_corner_radius="@dimen/px_20" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小米智能破壁料理机"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:text="市场价 1000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_50"
+                android:layout_marginRight="@dimen/px_50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="集福进度"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/tv_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="我已集福1次"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_15"
+                    android:layout_below="@+id/tv_times"
+                    android:layout_marginTop="@dimen/px_20"
+                    android:max="100"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/progressbar_bg" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px_40"
+                android:text="集满即开，集福越多开中概率越大"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="24"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/px_15"
+            android:paddingBottom="@dimen/px_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px_20"
+                android:text="上期宝盒"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_35" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_50"
+                android:paddingRight="@dimen/px_50">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_last_box"
+                    android:layout_width="@dimen/px_210"
+                    android:layout_height="@dimen/px_210"
+                    android:layout_centerVertical="true"
+                    android:src="@color/color_ddd"
+                    app:riv_border_color="#fed649"
+                    app:riv_border_width="@dimen/px_4"
+                    app:riv_corner_radius="@dimen/px_20" />
+
+                <TextView
+                    android:id="@+id/tv_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_last_box"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_toRightOf="@+id/iv_last_box"
+                    android:text="小米智能破壁料理机"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_35" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_last_name"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:layout_toRightOf="@+id/iv_last_box"
+                    android:text="市场价 12222"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_35" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_last_box"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_toRightOf="@+id/iv_last_box"
+                    android:text="开中用户13888888888"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_30" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_last_box"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="集福次数1次"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_30" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

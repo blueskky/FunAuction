@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px_40"
+    android:paddingBottom="@dimen/px_40"
+    android:transitionName="@string/search_transition_name">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_40"
+        android:background="@drawable/goods_item"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="@dimen/px_350"
+            android:layout_height="@dimen/px_350"
+            android:scaleType="centerCrop"
+            android:src="@color/color_ddd"
+            app:riv_corner_radius_bottom_left="@dimen/px_15"
+            app:riv_corner_radius_top_left="@dimen/px_15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/px_20">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="@dimen/px_36"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_cut"
+                    android:layout_width="@dimen/px_168"
+                    android:layout_height="@dimen/px_47"
+                    android:background="@drawable/price_cut"
+                    android:gravity="center"
+                    android:text="大幅降价"
+                    android:textColor="#fffbfa"
+                    android:textSize="@dimen/px_24"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_hot"
+                    android:layout_width="@dimen/px_74"
+                    android:layout_height="@dimen/px_47"
+                    android:layout_marginLeft="@dimen/px_25"
+                    android:background="@drawable/hot_bg"
+                    android:gravity="center"
+                    android:text="火爆"
+                    android:textColor="#fffbfa"
+                    android:textSize="@dimen/px_24"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最近降价:"
+                    android:textColor="#999"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/tv_cut_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_15"
+                    android:text="**分钟前"
+                    android:textColor="#4ebd60"
+                    android:textSize="@dimen/px_36" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvPat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/px_15"
+                    android:text="直接拍下"
+                    android:textColor="#f68122"
+                    android:textSize="@dimen/px_36" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_trans_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:text=""
+                android:textColor="#999"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:text=""
+                android:textColor="#999"
+                android:textSize="@dimen/px_36" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px_120"
+        android:layout_height="@dimen/px_120"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@drawable/goos_tag"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市场价"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_28" />
+
+        <TextView
+            android:id="@+id/tvMarket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:lines="1"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_28" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_95"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_300"
+        android:layout_marginRight="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_weight="5"
+            android:background="@drawable/count_down_bg"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="已有用户拍下,抢购倒计时"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_30" />
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/count_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                app:isHideTimeBackground="true"
+                app:isShowHour="true"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:suffixDay="天"
+                app:suffixGravity="center"
+                app:suffixHour=":"
+                app:suffixMinute=":"
+                app:suffixTextColor="#fff"
+                app:suffixTextSize="@dimen/px_30"
+                app:timeTextColor="#fff"
+                app:timeTextSize="@dimen/px_30" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/end_shape"
+            android:gravity="center"
+            android:text="已结束"
+            android:textSize="@dimen/px_36"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_peek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/watch_price"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/tv_current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px_30"
+                android:gravity="center"
+                android:text="现价¥ ？？？"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_30"
+                android:gravity="center"
+                android:text="偷瞄现价"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_36" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

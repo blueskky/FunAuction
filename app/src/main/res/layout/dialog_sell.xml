@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/px_740"
+    android:layout_height="@dimen/px_910"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/px_260"
+        android:layout_height="@dimen/px_260"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_sell"
+        app:riv_corner_radius="@dimen/px_10" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:text="确认转卖商品"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_35" />
+
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:text="共一件"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_36" />
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/btn_sell"
+        android:layout_width="@dimen/px_470"
+        android:layout_height="@dimen/px_110"
+        android:background="@drawable/btn_pat"
+        android:gravity="center"
+        android:text="确认转卖"
+        android:textColor="#4cb569"
+        android:textSize="@dimen/px_40" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginBottom="@dimen/px_50"
+        android:text="转卖金额将自动存入账户余额"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_36" />
+
+
+</LinearLayout>

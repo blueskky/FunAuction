@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".ui.WishActivity">
+
+    <include layout="@layout/common_title" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:hint="请输入商品在淘宝、京东等平台的链接地址"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:textColor="@color/white"
+        android:textColorHint="#9c9c9c"
+        android:textSize="@dimen/px_36" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etPlatform"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_150"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="所属平台"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:textColor="@color/white"
+            android:textColorHint="#9c9c9c"
+            android:textSize="@dimen/px_36" />
+
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner"
+            android:layout_width="@dimen/px_300"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_10"
+            app:backgroundSelector="@drawable/spinner"
+            app:textTint="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_60"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/wish_edit"
+        android:hint="请备注具体规格，如尺寸，颜色等"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:textColor="@color/white"
+        android:textColorHint="#9c9c9c"
+        android:textSize="@dimen/px_36" />
+
+
+    <Button
+        android:id="@+id/btn_wish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px_70"
+        android:layout_marginTop="@dimen/px_160"
+        android:layout_marginRight="@dimen/px_70"
+        android:background="@drawable/btn_want"
+        android:text="申请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_40" />
+
+</LinearLayout>

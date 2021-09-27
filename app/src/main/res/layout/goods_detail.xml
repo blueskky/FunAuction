@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/px_40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/px_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现价¥  ???"
+                android:textColor="#ef5d30"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:id="@+id/tvMarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:text=""
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:id="@+id/tv_cut"
+                android:layout_width="@dimen/px_168"
+                android:layout_height="@dimen/px_47"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@drawable/price_cut"
+                android:gravity="center"
+                android:text="大幅降价"
+                android:textColor="#fffbfa"
+                android:textSize="@dimen/px_24" />
+
+            <TextView
+                android:id="@+id/tv_hot"
+                android:layout_width="@dimen/px_74"
+                android:layout_height="@dimen/px_47"
+                android:layout_marginLeft="@dimen/px_25"
+                android:background="@drawable/hot_bg"
+                android:gravity="center"
+                android:text="火爆"
+                android:textColor="#fffbfa"
+                android:textSize="@dimen/px_24" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近降价:"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:id="@+id/tv_cut_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_15"
+                android:text="暂无"
+                android:textColor="#4ebd60"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:text="出价用户:"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+            <TextView
+                android:id="@+id/tv_pat_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_15"
+                android:text="暂无"
+                android:textColor="#4ebd60"
+                android:textSize="@dimen/px_36" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/px_40"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="数量x1"
+            android:textColor="#a0a0a0"
+            android:textSize="@dimen/px_36" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:background="#373737"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@drawable/icon_zhen" />
+
+
+        <TextView
+            android:id="@+id/tv_pin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_36"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="正品保障：本产品系第三方正品采购，享有品牌方承诺售后服务。"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_36" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:orientation="vertical"
+        android:padding="@dimen/px_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抢购单号："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:id="@+id/tv_order_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买方式："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减价抢拍"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起拍价格："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="市场原价或低于市场原价"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减价方式："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户每偷瞄一次，总价会下降一次"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍拍规则："
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="率先在减价到0元时偷瞄的用户可免费拍得该产品；其他价格时，直接拍下后24小时内无人抢购，则抢购成功"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/px_36" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

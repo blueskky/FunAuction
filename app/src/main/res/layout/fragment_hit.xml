@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_60"
+        android:gravity="center"
+        android:text="恭喜你\n抽中等离子吹风机"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/px_50" />
+
+
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/open_box_bg" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="@dimen/px_480"
+            android:layout_height="@dimen/px_480"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/px_40"
+            android:background="@drawable/hit_goods_bg"
+            android:padding="@dimen/px_12"
+            android:scaleType="centerCrop"
+            android:src="@color/color_ddd"
+            android:visibility="gone"
+            app:riv_corner_radius="@dimen/px_45" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

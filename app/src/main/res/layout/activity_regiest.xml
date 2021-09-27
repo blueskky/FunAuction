@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".ui.EasyLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:background="#4C4899">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_150"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_40" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px_120"
+            android:paddingRight="@dimen/px_120">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_130"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#a2a1d8"
+                    android:textCursorDrawable="@drawable/shape_login_cursor"
+                    android:textSize="@dimen/px_36" />
+
+                <TextView
+                    android:id="@+id/tv_get_code"
+                    android:layout_width="@dimen/px_200"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/et_phone"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_130"
+                android:layout_marginTop="@dimen/px_100"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入手机验证码"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#a2a1d8"
+                    android:textCursorDrawable="@drawable/shape_login_cursor"
+                    android:textSize="@dimen/px_36" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_2"
+                android:background="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_60"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/check_box_selector"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/tv_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_36" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_150"
+                android:layout_marginTop="@dimen/px_150"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#464892"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/tv_other_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_100"
+                android:padding="@dimen/px_10"
+                android:text="本机号码登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_40"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

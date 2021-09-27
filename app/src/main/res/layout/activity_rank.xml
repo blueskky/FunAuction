@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RankActivity">
+
+
+    <FrameLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_64"
+        android:layout_marginTop="@dimen/px_200"
+        android:layout_marginRight="@dimen/px_64"
+        android:layout_marginBottom="@dimen/px_350"
+        android:background="@drawable/super_box_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_130"
+        android:layout_marginBottom="@dimen/px_350"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/super_box" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_30"
+            android:gravity="center"
+            android:text="本场可冲击超级宝盒"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_36" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bg"
+        android:layout_marginTop="@dimen/px_50"
+        android:src="@drawable/icon_close" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/px_200"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="拍中用户请在24小时内完善收货信息\n
+清单商品拍完即止，商品种类不定期更新"
+        android:textColor="#999999"
+        android:textSize="@dimen/px_36" />
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.GoodsDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_140"
+        android:background="@color/common_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TITLE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_70"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_40"
+            android:background="@drawable/btn_share"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px_30"
+            android:paddingRight="@dimen/px_30"
+            android:text="分享免费偷瞄"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_35" />
+
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlEnableLoadMore="false">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_90"
+                    android:background="@drawable/count_down_shape"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:text="已有用户拍下，抢购倒计时"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/px_35" />
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/count_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_10"
+                        app:isHideTimeBackground="true"
+                        app:isShowHour="true"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:suffixDay="天"
+                        app:suffixGravity="center"
+                        app:suffixHour=":"
+                        app:suffixMinute=":"
+                        app:suffixTextColor="#fff"
+                        app:suffixTextSize="@dimen/px_35"
+                        app:timeTextColor="#fff"
+                        app:timeTextSize="@dimen/px_35" />
+
+
+                </LinearLayout>
+
+                <com.fun.auction.widget.XFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </com.fun.auction.widget.XFrameLayout>
+
+
+                <include layout="@layout/goods_detail" />
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150">
+
+        <TextView
+            android:id="@+id/tv_pat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#f65822"
+            android:gravity="center"
+            android:text="直接拍下"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:id="@+id/tv_peek_watch_"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/watch_price1"
+            android:gravity="center"
+            android:text="偷瞄现价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_40" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
